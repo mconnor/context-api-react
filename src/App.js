@@ -46,10 +46,10 @@ class Person extends Component {
         <MyContext.Consumer>
           {(context) => (
             <React.Fragment>
-              <p>name {context.state.name}</p>
-              <p>hair {context.state.hair}</p>
-              <p>age {context.state.age}</p>
-              <button onClick={context.growYearOlder}>cake</button>
+              <p>name: {context.state.name}</p>
+              <p>hair: {context.state.hair}</p>
+              <p>age: {context.state.age}</p>
+              <button onClick={context.growYearOlder}>🎂</button>
             </React.Fragment>
           )}
         </MyContext.Consumer>
@@ -60,14 +60,15 @@ class Person extends Component {
 class App extends Component {
   
   render() {
-    return (
+    return ( 
       <MyProvider>
-      <div className="App">
-        <header className="App-header">
-          <Family/>
-         
-        </header>
-      </div>
+        <h1>React Context API Test</h1>
+        <div className="App">
+          <header className="App-header">
+            <Family/>
+          
+          </header>
+        </div>
       </MyProvider>
     );
   }
