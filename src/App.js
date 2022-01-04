@@ -19,7 +19,7 @@ class MyProvider extends Component {
           {
             state: this.state,
             growYearOlder: () => {
-              console.log('click');
+            
               this.setState({
                 age: this.state.age + 1
               })
