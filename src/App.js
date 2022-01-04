@@ -49,7 +49,6 @@ class Person extends Component {
               <p>name: {context.state.name}</p>
               <p>hair: {context.state.hair}</p>
               <p>age: {context.state.age}</p>
-              // eslint-disable-next-line jsx-a11y/accessible-emoji
               <button onClick={context.growYearOlder}>🎂</button>
             </React.Fragment>
           )}
