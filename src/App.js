@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, {createContext,  Component } from 'react';
 
 import './App.css';
 
 
-const MyContext = React.createContext();
+const MyContext = createContext();
 
 // provider component
 
@@ -45,12 +45,12 @@ class Person extends Component {
         {/* child of MyContext.Consumer is always a function */}
         <MyContext.Consumer>
           {(context) => (
-            <React.Fragment>
+            <>
               <p>name: {context.state.name}</p>
               <p>hair: {context.state.hair}</p>
               <p>age: {context.state.age}</p>
               <button onClick={context.growYearOlder}>🎂</button>
-            </React.Fragment>
+            </>
           )}
         </MyContext.Consumer>
       </div>
