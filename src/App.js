@@ -42,7 +42,7 @@ class Person extends Component {
   render(){
     return (
       <div className="person">
-        {/* child of MyContext.Consumer is always a funciton */}
+        {/* child of MyContext.Consumer is always a function */}
         <MyContext.Consumer>
           {(context) => (
             <React.Fragment>
