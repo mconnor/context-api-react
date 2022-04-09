@@ -9,7 +9,7 @@
         "classes"
     ],
     "engines": {
-        "node": "14.2 - 14.9 || >14.10.0"
+        "node": ">16.10.0"
     },
     "dependencies": {
         "react": "^17.0.2",
